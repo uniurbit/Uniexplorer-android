@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "244395318958",
+    "project_id": "uniexplorer-4b7f4",
+    "storage_bucket": "uniexplorer-4b7f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244395318958:android:5925c35121287e8947973f",
+        "android_client_info": {
+          "package_name": "com.appload.einkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244395318958-uins34dklasc72cfsab356987f33k25o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWYQRBJUpV2t4lHOn9U8FMv56LnazBy6I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244395318958-uins34dklasc72cfsab356987f33k25o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

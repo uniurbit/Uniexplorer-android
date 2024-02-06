@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/explore"
+        android:icon="@drawable/compass"
+        android:title="@string/esplora" />
+    <item
+        android:id="@+id/poi"
+        android:icon="@drawable/poi"
+        android:title="@string/punti_di_interesse" />
+</menu>

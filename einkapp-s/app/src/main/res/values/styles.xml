@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/CustomTextAppearance</item>
+    </style>
+
+    <style name="Widget.App.Slider.Blue" parent="Widget.MaterialComponents.Slider">
+        <item name="materialThemeOverlay">@style/Theme.Slider.Blue</item>
+    </style>
+
+    <style name="Theme.Slider.Blue" parent="">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorOnPrimary">@color/grey_ccccc</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <style name="Theme.Button.Blue" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/background_blue_button</item>
+        <item name="android:textColor">@color/blue_button</item>
+        <item name="android:drawableTint">@color/blue_button</item>
+    </style>
+
+    <style name="Theme.Button.Add" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/background_menu_add_botton</item>
+        <item name="android:textColor">@color/blue_button</item>
+        <item name="android:drawableTint">@color/white</item>
+    </style>
+
+
+
+    <style name="Theme.Button.Blue.Semitransparent" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/text_on_semi_blue</item>
+        <item name="android:drawableTint">@color/text_on_semi_blue</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Theme.App.InputText" parent="Widget.Design.TextInputLayout">
+        <item name="colorPrimarySurface">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.App.AutoCompleteInputText" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="colorPrimarySurface">@android:color/transparent</item>
+        <item name="colorContainer">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Text.Edit.Outlined.4dp" parent="Widget.AppCompat.EditText">
+        <item name="background">@drawable/background_input_field_4dp</item>
+        <item name="android:textColor">@color/slate_700</item>
+        <item name="hintTextColor">@color/slate_500</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+
+
+</resources>

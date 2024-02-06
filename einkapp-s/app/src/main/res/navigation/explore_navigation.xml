@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/exploreHome">
+
+
+    <fragment
+        android:id="@+id/exploreHome"
+        android:name="com.appload.einkapp.view.explore.ExploreHome"
+        android:label="fragment_explore_home"
+        tools:layout="@layout/fragment_explore_home">
+        <action
+            android:id="@+id/action_exploreHome_to_aulaFragment"
+            app:destination="@id/aulaFragment" />
+        <action
+            android:id="@+id/action_exploreHome_to_addPoiFragment"
+            app:destination="@id/addPoiFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+        <action
+            android:id="@+id/action_exploreHome_to_profile_navigation"
+            app:destination="@id/profile_navigation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aulaFragment"
+        android:name="com.appload.einkapp.view.AulaFragment"
+        android:label="AulaFragment"
+        tools:layout="@layout/fragment_aula">
+        <argument
+            android:name="uuid"
+            app:argType="string" />
+        <argument
+            android:name="major"
+            app:argType="string" />
+        <argument
+            android:name="minor"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_aulaFragment_to_addPoiFragment"
+            app:destination="@id/addPoiFragment" />
+        <action
+            android:id="@+id/action_aulaFragment_to_profile_navigation"
+            app:destination="@id/profile_navigation" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addPoiFragment"
+        android:name="com.appload.einkapp.view.AddPoiFragment"
+        android:label="AddPoiFragment"
+        tools:layout="@layout/fragment_add_poi">
+        <action
+            android:id="@+id/action_addPoiFragment_to_exploreHome"
+            app:destination="@id/exploreHome" />
+        <action
+            android:id="@+id/action_addPoiFragment_to_profile_navigation"
+            app:destination="@id/profile_navigation" />
+    </fragment>
+    <include app:graph="@navigation/profile_navigation" />
+
+</navigation>

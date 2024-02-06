@@ -1,0 +1,142 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 33
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    defaultConfig {
+        applicationId "com.appload.einkapp"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("..\\keystore\\keysDebug.jks")
+            storePassword ''
+            keyAlias ''
+            keyPassword ''
+        }
+        release {
+            storeFile file("..\\keystore\\keysRelease.jks")
+            storePassword ''
+            keyAlias ''
+            keyPassword ''
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    flavorDimensions 'main'
+    productFlavors {
+
+        production {
+            versionCode 6
+            versionName "1.0.0"
+            dimension 'main'
+            resValue "string", "app_name", "UniExplorer"
+            buildConfigField 'String', 'BASE_URL', '""'
+        }
+
+        development {
+            versionCode 2
+            versionName "1.0.0"
+            dimension 'main'
+            resValue "string", "app_name", "UniExplorer"
+            buildConfigField 'String', 'BASE_URL', '""'
+        }
+
+    }
+
+    variantFilter { variant ->
+        variant.setIgnore(!(variant.name in [
+                'developmentDebug', 'internalTestingDebug', 'productionDebug', 'productionRelease'
+        ]))
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.10.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    implementation 'com.google.maps.android:maps-utils-ktx:3.4.0'
+    implementation 'com.google.android.gms:play-services-auth:20.1.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.google.code.gson:gson:2.9.1'
+    implementation "com.squareup.retrofit2:converter-scalars:2.9.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
+
+    implementation('com.squareup.retrofit2:converter-simplexml:2.9.0') {
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+    }
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.7'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'org.altbeacon:android-beacon-library:2.19.4'
+
+    implementation platform('com.google.firebase:firebase-bom:31.2.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    implementation 'com.google.gms:google-services:4.3.15'
+
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    implementation 'com.squareup.moshi:moshi:1.14.0'
+    implementation 'com.mikhaellopez:circularimageview:4.3.0'
+
+}

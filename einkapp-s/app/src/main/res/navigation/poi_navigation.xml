@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/poiHome">
+    <fragment
+        android:id="@+id/poiHome"
+        android:name="com.appload.einkapp.PoiHome"
+        android:label="fragment_poi_home"
+        tools:layout="@layout/fragment_poi_home" >
+        <action
+            android:id="@+id/action_poiHome_to_aulaFragment3"
+            app:destination="@id/aulaFragment3" />
+        <action
+            android:id="@+id/action_poiHome_to_profile_navigation"
+            app:destination="@id/profile_navigation" />
+        <action
+            android:id="@+id/action_poiHome_to_addPoiFragment3"
+            app:destination="@id/addPoiFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/aulaFragment3"
+        android:name="com.appload.einkapp.view.AulaFragment"
+        android:label="AulaFragment"
+        tools:layout="@layout/fragment_aula">
+        <argument
+            android:name="uuid"
+            app:argType="string" />
+        <argument
+            android:name="major"
+            app:argType="string" />
+        <argument
+            android:name="minor"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_aulaFragment_to_profile_navigation"
+            app:destination="@id/profile_navigation" />
+        <action
+            android:id="@+id/action_aulaFragment_to_addPoiFragment3"
+            app:destination="@id/addPoiFragment3" />
+    </fragment>
+    <include app:graph="@navigation/profile_navigation" />
+
+    <fragment
+        android:id="@+id/addPoiFragment3"
+        android:name="com.appload.einkapp.view.AddPoiFragment"
+        android:label="AddPoiFragment"
+        tools:layout="@layout/fragment_add_poi">
+        <action
+            android:id="@+id/action_addPoiFragment_to_profile_navigation"
+            app:destination="@id/profile_navigation" />
+    </fragment>
+</navigation>

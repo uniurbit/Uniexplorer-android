@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_button">#0A84FF</color>
+    <color name="light_blue">#260A84FF</color>
+    <color name="background_grey">#F3F3F3</color>
+    <color name="default_background">#F4F7FA</color>
+    <color name="background_light_grey">#F5F5F5</color>
+    <color name="grey_text">#515151</color>
+    <color name="blue_text">#007AFF</color>
+    <color name="light_grey_text">#616161</color>
+    <color name="medium_grey_text">#4E4E4E</color>
+    <color name="red">#F44336</color>
+    <color name="succes_green_opacity">#1A63C52A</color>
+    <color name="yellow_bc">#FBCB41</color>
+    <color name="red_bc">#F1487A</color>
+    <color name="light_blue_bc">#54AFE5</color>
+    <color name="light_blue_bc_20">#3354AFE5</color>
+    <color name="light_blue_15">#260A84FF</color>
+    <color name="green_bc">#7ECD50</color>
+    <color name="black_bc">#000000</color>
+    <color name="black_text">#333333</color>
+    <color name="blue_ios">#007AFF</color>
+
+    <color name="grey">#888888</color>
+    <color name="grey_separator">#E0E0E0</color>
+    <color name="light_grey">#F8F8F8</color>
+    <color name="grey_ccccc">#cccccc</color>
+    <color name="medium_grey">#EFEFEF</color>
+    <color name="grey_separator_2">#B1BCBE</color>
+    <color name="light_grey_header">#EFEFEF</color>
+    <color name="background_grey_10">#99F3F3F3</color>
+    <color name="grey_slidebar">#D9D9D9</color>
+    <color name="background_dark_grey">#E7E7E7</color>
+    <color name="grey_corner">#DDDDDD</color>
+    <color name="light_grey_item_background">#1F767680</color>
+
+    <color name="body_text">#666666</color>
+    <color name="succes_green">#63C52A</color>
+    <color name="error_red">#EC2C2C</color>
+    <color name="red_report">#ff006e</color>
+    <color name="green_text">#3C8015</color>
+    <color name="chip_border">#AFAFAF</color>
+    <color name="yellow_text">#BE9214</color>
+    <color name="green_txt">#286704</color>
+    <color name="green_bc_03">#4D7ECD50</color>
+    <color name="tab_layout_bg">#E8E8E8</color>
+    <color name="orange_text">#B26000</color>
+    <color name="green_background_opacity">#1A63C52A</color>
+    <color name="teal">#3798D1</color>
+    <color name="yellow_bc_opacity10">#1AFBCB41</color>
+    <color name="pastel_purple">#D59AC5</color>
+    <color name="pastel_blue">#98CEED</color>
+    <color name="pastel_yellow">#F6D989</color>
+    <color name="pastel_pink">#F592AF</color>
+    <color name="pastel_green">#B1DE96</color>
+
+    <color name="nero">#1D252D</color>
+    <color name="nero_90">#E51D252D</color>
+    <color name="nero_80">#CC1D252D</color>
+    <color name="nero_70">#B21D252D</color>
+    <color name="nero_60">#991D252D</color>
+    <color name="nero_50">#801D252D</color>
+    <color name="nero_40">#661D252D</color>
+    <color name="nero_30">#4D1D252D</color>
+    <color name="nero_20">#331D252D</color>
+    <color name="nero_10">#1A1D252D</color>
+    <color name="light_black">#5d5e5f</color>
+
+
+    <color name="slate">#3E3C56</color>
+    <color name="slate_900">#0F172A</color>
+    <color name="slate_800">#1E293B</color>
+    <color name="slate_700">#334155</color>
+    <color name="slate_600">#475569</color>
+    <color name="slate_500">#64748B</color>
+    <color name="slate_400">#94A3B8</color>
+    <color name="slate_300">#CBD5E1</color>
+    <color name="slate_200">#E2E8F0</color>
+    <color name="slate_100">#F1F5F9</color>
+
+    <color name="grey_background">#F6F6F6</color>
+
+
+    <color name="grigio">#C1C6C8</color>
+    <color name="grigio_90">#E5C1C6C8</color>
+    <color name="grigio_80">#CCC1C6C8</color>
+    <color name="grigio_70">#B2C1C6C8</color>
+    <color name="grigio_60">#99C1C6C8</color>
+    <color name="grigio_50">#80C1C6C8</color>
+    <color name="grigio_40">#66C1C6C8</color>
+    <color name="grigio_30">#4DC1C6C8</color>
+    <color name="grigio_20">#33C1C6C8</color>
+    <color name="grigio_10">#1AC1C6C8</color>
+
+    <color name="chip_blue">#4A9AF5</color>
+    <color name="chip_blue_10">#1A4A9AF5</color>
+
+    <color name="chip_green">#23947E</color>
+    <color name="chip_green_10">#1A23947E</color>
+
+    <color name="warning_yellow">#F7B500</color>
+    <color name="warning_yellow_light">#fff3cd</color>
+
+    <color name="chip_orange">#DD7800</color>
+    <color name="chip_orange_10">#1ADD7800</color>
+
+    <color name="chip_red">#F64628</color>
+    <color name="chip_red_10">#1AF64628</color>
+
+    <color name="blue_color_button_1">#0A84FF</color>
+    <color name="blue">#007AFF</color>
+    <color name="light_blue_2">#260A84FF</color>
+    <color name="violet_button">#8401B1</color>
+    <color name="violet_transparent">#4DECA0FF</color>
+    <color name="violet_very_transparent">#4DF0C2FB</color>
+    <color name="violet_very_very_transparent">#3EC0C0FF</color>
+
+    //APP COLOR
+    <color name="background_page">#F4F7FA</color>
+    <color name="blue_buttons">#007AFF</color>
+</resources>
